@@ -1,11 +1,11 @@
 Summary:	XML From Plain Text
 Name:		xfpt
-Version:	0.07
+Version:	0.08
 Release:	1
 License:	GPL v2
 Group:		Applications/Publishing/XML
 Source0:	ftp://ftp.csx.cam.ac.uk/pub/software/wordprocessing/unix/xfpt/%{name}-%{version}.tar.bz2
-# Source0-md5:	6e2aea16cf1df347ffd57b27de654a05
+# Source0-md5:	024f9037c0306d048c1c5b07cf400b45
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
