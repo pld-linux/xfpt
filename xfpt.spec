@@ -1,11 +1,12 @@
 Summary:	XML From Plain Text
+Summary(pl.UTF-8):	XML z zwyklego tekstu
 Name:		xfpt
-Version:	0.08
+Version:	0.09
 Release:	1
 License:	GPL v2
 Group:		Applications/Publishing/XML
 Source0:	ftp://ftp.csx.cam.ac.uk/pub/software/wordprocessing/unix/xfpt/%{name}-%{version}.tar.bz2
-# Source0-md5:	024f9037c0306d048c1c5b07cf400b45
+# Source0-md5:	35ba1521dc89e68600456ff598463b4f
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -17,6 +18,15 @@ introduced by ampersand characters, but is otherwise "soft". You can
 define what follows the ampersand, for example, &" to generate a
 "quote" element. There is also a macro facility that allows for higher
 level concepts such as chapters, displays, tables, etc.
+
+%description -l pl.UTF-8
+xfpt to program, który czyta plik tekstowy zawierający relatywnie
+proste znaczniki i tworzy plik XML. Jego intencją jest uproszczenia
+zarządzania danymi XML. To nie jest program, który ma za zadanie
+konwersje pliku tekstowego w XML. Znaczniki tekstu są poprzedzane
+przez znaki et (&). Możesz zdefiniować co poprzedza et, na przykład &"
+aby wygenerować "cytowany" wiersz. Zawiera także makro, które pozwala
+na wyższy poziom pojęcia jak rozdziały, obrazki, tabele,etc.
 
 %prep
 %setup -q
